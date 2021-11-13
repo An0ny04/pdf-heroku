@@ -42,7 +42,7 @@ def home(request):
             print(data)
             return FileResponse(data[0], as_attachment=True, filename=data[1]+'Aadhar(EKYC).pdf'.format(name=data[1]))
         except Exception as e:
-            print(e.text)
+            print(e)
             return redirect('error')   
     else:
         files = (os.path.join(os.path.abspath('.'), 'media/'))
