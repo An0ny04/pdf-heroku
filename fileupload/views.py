@@ -44,10 +44,10 @@ def home(request):
             print(e)
             return redirect('error')   
     else:
-        files = (os.path.join(os.path.abspath('.'), 'media/'))
-        for f in os.listdir(files):
-            os.remove(os.path.join(files, f))
-        print(os.path.join(os.path.abspath('.'), 'media/'))
+        # files = (os.path.join(os.path.abspath('.'), 'media/'))
+        # for f in os.listdir(files):
+        #     os.remove(os.path.join(files, f))
+        # print(os.path.join(os.path.abspath('.'), 'media/'))
         return render(request, "index.html")
 
 
