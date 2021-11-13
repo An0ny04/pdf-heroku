@@ -2,7 +2,6 @@ from os import rename
 from django.http.response import HttpResponse
 from django.http import FileResponse
 from django.shortcuts import redirect, render
-from .models import FilesUpload
 import os
 import io
 import base64
