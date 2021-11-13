@@ -41,7 +41,8 @@ def home(request):
             data = reportlab_view(file_name)
             print(data)
             return FileResponse(data[0], as_attachment=True, filename=data[1]+'Aadhar(EKYC).pdf'.format(name=data[1]))
-        except :
+        except Exception as e:
+            print(e.text)
             return redirect('error')   
     else:
         files = (os.path.join(os.path.abspath('.'), 'media/'))
