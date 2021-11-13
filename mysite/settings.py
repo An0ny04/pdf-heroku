@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wt596@-nfrtprb78i$1xdickftsdtjlj4iahx-#9b#(o1chn#6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','aadharpdf.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1','pdfconverterpis.herokuapp.com']
 
 
 # Application definition
