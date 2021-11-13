@@ -34,8 +34,8 @@ def home(request):
         try:
             
             file2=request.FILES["file"]
-            document= FilesUpload.objects.create(file=file2)
-            document.save()
+            # document= FilesUpload.objects.create(file=file2)
+            # document.save()
             file_name = str(file2)
             data = reportlab_view(file_name)
             print(data)
