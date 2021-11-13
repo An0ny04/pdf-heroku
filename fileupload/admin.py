@@ -1,6 +1,6 @@
-from django.contrib import admin
+# from django.contrib import admin
 
-# Register your models here.
-from .models import FilesUpload
+# # Register your models here.
+# from .models import FilesUpload
 
-admin.site.register(FilesUpload)
+# admin.site.register(FilesUpload)
